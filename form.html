@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>  -->
+
+<link rel="stylesheet" href="form.css">
+<title>Document</title>
+</head>
+<body id="body">
+
+<!-- navbar start -->
+<div class="nav">
+  <nav class="navbar">
+      <div class="navdiv1"> 
+       <img src="logo.jpg"></img>
+           <a href="javascript:void(0)">Home</a>
+            <a href="javascript:void(0)">About</a>
+              <a href="javascript:void(0)">About</a>
+                <a href="javascript:void(0)">Services</a>
+                  <input type="text"  placeholder="Want to search any book?" id="search" class="search"></input> 
+                    <input type="button"  value="search" class="btn btn-info" onclick="search()" class="srch"></input>
+      </div>
+  </nav>  
+</div>
+<!-- navbar end -->
+
+<!-- text on hero start -->
+  <div class="div"> 
+  <div class="content">
+  <p style="font-size: 90px; font-family:cursive; color: rgb(245, 239, 239); font-weight: 300; ">LIBRARY</p>
+  <p style="color:rgb(248, 242, 242); font-family: cursive; font-weight: 200;">A Library is a place where books are stored and maintained. Thats the most basic definition. But is it just that? Only a person who knows how to love reading can know what importance a library holds. It is filled with racks and racks of books on a zillion different topics, just waiting to be opened and accessed. A Library is the best traditional form of knowledge you will ever come across.</p>
+  </div>
+  </div>
+<!-- text end -->
+
+<!-- book figure section start -->
+<section>
+  <div class="h2">
+    <h2>Different Types Of Online Books For You</h2>
+  </div>
+  <div class="row1">
+    <div class="col1">
+      <figure class="fig1">
+        <a href="#"><img class="book1" src="fig1.jpg"></img></a>
+        <figcaption class="cap1" style="text-align: center;">It is 1864, and Captain Thomas Musgraves schooner, the Grafton, has just wrecked on Auckland Island. 
+         </figcaption>
+      </figure>
+    </div>
+    <div class="col1">
+      <figure class="fig2">
+        <a href="#"><img class="book2" src="book1.jpg"></img></a>
+        <figcaption class="cap2" style="text-align: center;"> Incredibly, at the same time on the opposite end of the island, another ship runs aground during a storm.</figcaption>
+      </figure>
+    </div>
+    <div class="col1">
+      <figure class="fig3">
+        <a href="#"><img class="book3" src="book2.jpg "></img></a>
+        <figcaption class="cap3" style="text-align: center;">this extraordinary untold story about leadership and the fine line between order and chaos.</figcaption>
+      </figure>
+    </div>
+    <div class="col1">
+      <figure class="fig4">
+        <a href="#"><img  class="book4" src="book3.jpg"></img></a>
+        <figcaption class="cap4" style="text-align: center;">this extraordinary untold story about leadership and the fine line between order and chaos.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<!-- end -->
+
+<!-- form start -->     
+<div class="div1">
+<form class="form1">
+  <p style="background-color: black; color: aliceblue; font-size: 30px; text-shadow: 1px; font-family: cursive;">Book detail form</p>
+  <label for="n" style="font-size: 18px; font-weight:700; font-family: cursive;">Book Name:</label>
+  <input type="text" name="name" id="n" class="name"></input> 
+   
+  <label for="s" style="font-size: 18px; font-weight:700; font-family: cursive;">Author Name:</label>
+  <input type="text"  name="sname" id="s" class="aname"></input>
+    
+  <label for="p" style="font-size: 18px; font-weight:700; font-family: cursive;">Book Type:</label>
+  <input type="text" name="pnum" id="p" class="btype"></input>
+  
+  <input type="button" value="Submit" class="btn btn-info"  onClick="add()" style="font-family: cursive; font-weight: 300; margin-top: 15px;"></input>&nbsp;&nbsp;
+  <input type="button" value="Update" class="btn btn-info" onclick="update(event)" style="font-family: cursive; font-weight: 300; margin-top: 15px;"></input>&nbsp;&nbsp;
+  <!-- <input type="button" value="Reset" class="btn btn-info" onclick="resetForm()" style="font-family: cursive; font-weight: 300; margin-top: 15px;"></input>&nbsp;&nbsp; -->
+</form>
+<!-- form end -->
+
+<!-- table start-->
+  <table> 
+        <thead>
+            <th>Book Id</th >
+            <th>Book Name</th >
+            <th>Author Name</th >
+            <th>Book Type</th >
+            <th>Actions</th>
+        </thead>  
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+</div> 
+<!-- table end -->
+
+<!-- footer -->
+<footer class="bg-dark text-center text-lg-start sticky">
+  <div class="text-center p-3 text-light" style="background-color: rgb(8, 0, 0); position: fixed-bottom; font-size: 20px;">
+    © 2023 Copyright:
+    <a class="text-light" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+</footer>
+<!-- footer end -->
+
+<script src="form.js"></script>
+</body>
+</html>
